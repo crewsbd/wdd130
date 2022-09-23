@@ -4,6 +4,7 @@ Any spaces in your font name should be replaced with a +.
 Fonts are separated by a & */
 @import url('https://fonts.googleapis.com/css2?family=Tajawal&family=Underdog&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Tajawal&family=Underdog&display=swap');
 
 :root {
   /* change the values below to your colors from your palette */
@@ -14,7 +15,7 @@ Fonts are separated by a & */
 
   /* change the values below to your chosen font(s) */
   /*--heading-font: "IM Fell French Canon"; */
-  --heading-font: "Underdog";
+  --heading-font: "Racing Sans One";
   --paragraph-font: Tajawal, Helvetica, sans-serif; 
   /*--paragraph-font: "Aquire Light", Helvetica, sans-serif; */
 
@@ -24,10 +25,10 @@ Fonts are separated by a & */
   --paragraph-color-on-white: #028090; /* paragraph text on a white background */ 
   --paragraph-color-on-color: #eb9d6d; /* paragraph text on a colored background */ 
   --paragraph-background-color: #396E94  ;
-  --nav-link-color: #396E94;
-  --nav-background-color: #D4AC0D;
-  --nav-hover-link-color: white;
-  --nav-hover-background-color: #396E94;
+  --nav-link-color: #114b5f;
+  --nav-background-color: #eb9d6d;
+  --nav-hover-link-color: #95dce5;
+  --nav-hover-background-color: #028090;
 }
 
 
