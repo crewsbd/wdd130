@@ -1,0 +1,49 @@
+* {
+    border: 2px rgb(20, 52, 52);
+}
+body {
+    background-color: #faa7c9;
+}
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+.main-title {
+    color: white;
+    font-size: 27pt;
+}
+.main-title:hover {
+    color:black;
+}
+.portrait {
+    margin: 0, auto;
+    width: 40%;
+}
+.main {
+    max-width: 1478px;
+    text-align: center;
+    margin: 0 auto;
+    width: 35%
+}
+blockquote.large {
+    color: white;
+    font-size: 2.3em;
+}
+blockquote.small {
+    color:white;
+    font-size: .85em;
+    font-family:'Times New Roman', Times, serif;
+    line-height: 1.7;
+    margin: 0 0;
+}
+.attribution {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
+}
+ol {
+    text-align: left;
+    font-weight: bold;
+    line-height: 1.9;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
