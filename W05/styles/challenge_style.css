@@ -1,0 +1,38 @@
+body {
+    margin: 0;
+}
+#title {
+    background-color: grey;
+    padding: 0px;
+    margin-bottom: -4px;
+    border-width: 0;
+    white-space: normal;
+}
+#main {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0px;
+}
+#images {
+    background-color: dimgray;
+    width: 100%;
+    text-align: center;
+    padding: 0px;
+    margin: 0px;
+}
+.sub-images {
+    width: 21%;
+    border-radius: 40%;
+    border-width: 14px;
+    border-color: rgb(50, 50, 50);
+    border-style: solid;
+    margin: 30px;
+}
+#splash {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+}
+img {
+    margin: 0px;
+}
