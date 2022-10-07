@@ -1,0 +1,7 @@
+#border {
+    border-image-source: url(\test_border.png);
+    border-image-slice: 10 fill;
+    border: 20px solid transparent;
+    border-color: aquamarine;
+    padding: 10px;
+}

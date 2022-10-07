@@ -1,18 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Underdog&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&family=Tajawal&family=Underdog&display=swap');
+
+/* COMMENT! */
+ /* * {
+    border: solid greenyellow 1px
+ } */
+
+body {
+    background-color: white;
+    font-size: 22px;
+    font-family: Tajawal, Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+    font-family: Tajawal, Arial, Helvetica, sans-serif;
+}
 h4 {
     color: #114b5f;
+}
+h2 {
+    margin: 0;
 }
 nav a {
     text-align: center; 
     color: #114b5f;
     text-decoration: none;
+    padding: 35px;
 }
 nav a:hover {
     background-color: #95dce5;
     color: #eb9d6d;
-}
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
 }
 #background {
     height: 725px;
@@ -33,14 +54,16 @@ nav a:hover {
 main section {
     text-align: center; 
 }
-body {
-    background-color: white;
+main section img {
+    box-sizing: border-box;
 }
 header {
     background-color: #eb9d6d;
 }
 footer {
     background-color: #eb9d6d;
+    padding: 25px;
+    margin-top: 200px;
 }
 footer h3 {
     color: #114b5f;
@@ -62,6 +85,10 @@ footer p a:hover {
     background-color: #95dce5;
     color: #114b5f;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .book:hover {
     background-color: #95dce5;
@@ -71,6 +98,10 @@ footer p a:hover {
     background-color: #95dce5;
     color: #114b5f;
     text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
 }
 .join:hover {
     background-color: #95dce5;
@@ -78,19 +109,51 @@ footer p a:hover {
 }
 .msg {
     background-color: #eb9d6d;
+    line-height: 1.5em;
+    padding: 35px;
 }
 .msg h2 {
     color: #114b5f;
+    font-family: "Racing Sans One",Arial, Helvetica, sans-serif;
 }
 .msg p {
     color: #114b5f;
+    font-size: .8em;
+    padding-bottom: 15px;
 }
 .home-title {
     color: #114b5f;
+    font-family: "Racing Sans One",Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    margin-top: 10px;
 }
 .icon {
     width: 80px;
+    padding-top: 10px;
 }
 .logo {
     width: 80px;
+}
+#logo_link {
+    padding-top: 5px;
+}
+
+footer .social img {
+    padding-top: 15px;
+}
+.rivers-card {
+    margin: 200px 0;
+}
+.camping-card {
+    margin: 200px 0;
+}
+.rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #028090;
+}
+
+.mountains { /* I couldn't find this in the instructions, but it's the only way I could match the screen shot */
+    margin: 100px 0px;
 }
