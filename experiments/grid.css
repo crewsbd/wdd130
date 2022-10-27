@@ -1,0 +1,19 @@
+html, body {
+    height: 100%;
+    margin: 0px;
+}
+body {
+    display: grid;
+    grid-template-rows: 100px auto 100px;
+}
+.top {
+    background-color: bisque;
+
+}
+.middle {
+    background-color: brown;
+    overflow-y: scroll;
+}
+.bottom {
+    background-color: bisque;
+}

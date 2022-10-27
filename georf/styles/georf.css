@@ -1,0 +1,141 @@
+/* COMMENT */
+html {
+    height: 100vh;
+}
+body {
+    background-color: black;
+    height: 100%;
+    margin: 0;
+}
+.content {
+    display: grid;
+    grid-template-rows: 150px minmax(300px, 100%) 50px;
+    height: 100%;
+}
+header {
+    background-color: #222222;
+    padding: 20px;
+    vertical-align: middle;
+}
+main {
+    background-color: #222222;
+    display: grid;
+    height: 100%;
+    grid-template-columns: 300px auto;
+}
+footer {
+    background-color: #222222;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.3em;
+    color: #777799;
+}
+nav {
+    font-size: 1.2em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+nav input {
+    height: 29px;
+    width: 25%;
+    position: relative;
+    top: -4px;
+    background-color: #666677;
+}
+nav a {
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333333;
+    background-image: linear-gradient(#3d3d3d, #aaaaaa);
+    color: #d6d6ea;
+    border: 2px rgb(123, 121, 121) solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-radius: 4px;
+}
+nav a:hover {
+    background-color: #777799;
+    color: #fffee3;
+}
+table, td {
+
+    border-collapse: collapse;
+    width: 100%;
+}
+tr:nth-child(even) {
+    background-color: rgba(255,255,255,.05);
+}
+#title-text {
+    color: black;
+    font-size: 4em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bolder;
+    text-shadow: #ffffff 0px 0px 5px;
+    line-height: 0px;
+    position: relative;
+    left: 20px;
+}
+#title-image { 
+    height: 70px;
+}
+#frequencies {
+    background-color: #777799;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    /*height: 100%;*/
+
+    max-height: 100%;
+    padding: 0px;
+    margin: 0px;
+    border: 4px #333333 solid;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+}
+#freq-list {
+    /* height: 100%; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333333;
+    color: rgb(222, 212, 154);
+    box-sizing: border-box;
+    display: inline-block;
+    margin-right: -2px;
+    padding: 6px;
+    /* border: 0px white solid;
+    border-radius: 10px 0px 0px 10px; */
+    overflow-y: scroll;
+    overflow-x: hidden;
+    vertical-align: top;
+}
+#freq-display {
+    background-color: #1f495c;
+    box-sizing: border-box;
+    display: inline-block;
+    margin-left: -2px;
+    /*border: 0px white solid;
+    /*border-radius: 0px 10px 10px 0px; */
+    vertical-align: top;
+    overflow: hidden;
+}
+#map {
+    /* height: 100%; */
+    background-color: #41492e;
+    border: 4px #333333 solid;
+    vertical-align: middle;
+    text-align: center;
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+#map img {
+    height: 100%;
+}
+#freq-list table {
+    text-align: right;
+}
+tr td:nth-child(1) {
+    text-align: left;
+}
