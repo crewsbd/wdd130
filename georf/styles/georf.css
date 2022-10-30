@@ -1,3 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Geostar+Fill&family=Keania+One&display=swap');
+@font-face {
+    font-family: 'DSEG14 Classic Mini';
+    src: url('/georf/fonts/DSEG14ClassicMini-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 /* COMMENT */
 html {
     height: 100vh;
@@ -13,18 +22,18 @@ body {
     height: 100%;
 }
 header {
-    background-color: #222222;
+    background-color: #999999;
     padding: 20px;
     vertical-align: middle;
 }
 main {
-    background-color: #222222;
+    background-color: #999999;
     display: grid;
     height: 100%;
     grid-template-columns: 400px auto;
 }
 footer {
-    background-color: #222222;
+    background-color: #999999;
     text-align: center;
     vertical-align: middle;
     font-size: 1.3em;
@@ -53,7 +62,7 @@ nav a {
     padding-right: 10px;
     padding-top: 5px;
     padding-bottom: 5px;
-    border-radius: 4px;
+    border-radius: 7px;
 }
 nav a:hover {
     background-color: #777799;
@@ -63,19 +72,21 @@ table, td {
 
     border-collapse: collapse;
     width: 100%;
+    font-family: "DSEG14 Classic Mini";
 }
 tr:nth-child(even) {
     background-color: rgba(255,255,255,.05);
 }
 #title-text {
     color: black;
-    font-size: 4em;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: bolder;
+    font-size: 3em;
+    font-family: "Black Ops One";
+    font-weight: regular;
     text-shadow: #ffffff 0px 0px 5px;
     line-height: 0px;
     position: relative;
-    left: 20px;
+    left: -20px;
+    top: -10px;
 }
 #title-image { 
     height: 70px;
@@ -110,6 +121,7 @@ tr:nth-child(even) {
 #freq-display {
     background-color: #1f495c;
     background-image: url("/georf/images/waterfall-side.png");
+    background-size: 100%;
     box-sizing: border-box;
     display: inline-block;
     margin-left: -2px;
@@ -129,9 +141,9 @@ tr:nth-child(even) {
     overflow-y: hidden;
     overflow-x: hidden;
 }
-#map img {
+/* #map img {
     height: 100%;
-}
+} */
 #freq-list table {
     text-align: right;
 }
