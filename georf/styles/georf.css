@@ -140,10 +140,14 @@ tr:nth-child(even) {
     box-sizing: border-box;
     overflow-y: hidden;
     overflow-x: hidden;
+    box-shadow: 10px 10px 5px #00000072 inset;
+    z-index: 100;
+    position: relative;
 }
-/* #map img {
-    height: 100%;
-} */
+#map img {
+    z-index: -100;
+    position: relative;
+}
 #freq-list table {
     text-align: right;
 }
