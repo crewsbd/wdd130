@@ -377,6 +377,12 @@ footer .social img {
         position: relative;
         top: -20px;
     }
+    .river-text-left .image img {
+       width: 50%;
+    }
+    .river-text-right .image img {
+        width: 50%;
+     }
     .river-text-right .image {
         position: relative;
         top: -20px;
