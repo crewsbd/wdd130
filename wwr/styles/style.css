@@ -377,6 +377,10 @@ footer .social img {
         position: relative;
         top: -20px;
     }
+    .river-text-right .image {
+        position: relative;
+        top: -20px;
+    }
     .river-group {
         top: 0px;
     }
