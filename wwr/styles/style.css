@@ -375,18 +375,30 @@ footer .social img {
     }
     .river-text-left .image {
         position: relative;
-        top: -20px;
+        top: -100px;
     }
-    .river-text-left .image img {
-       width: 50%;
-    }
-    .river-text-right .image img {
-        width: 50%;
-     }
     .river-text-right .image {
         position: relative;
-        top: -20px;
+        top: -100px;
     }
+    .river-text-left .image img {
+       width: 75%;
+    }
+    .river-text-right .image img {
+        width: 75%;
+     }
+
+    .river-text-left .text {
+        position: relative;
+        background: linear-gradient(180deg, rgba(235,157,109,1) 0%, rgba(235,157,109,1) 35%, rgba(235,157,109,0.7) 100%);
+        
+    }
+    .river-text-right .text {
+        position: relative;
+        background: linear-gradient(180deg, rgba(235,157,109,1) 0%, rgba(235,157,109,1) 35%, rgba(235,157,109,0.7) 100%);
+        
+    }
+
     .river-group {
         top: 0px;
     }
