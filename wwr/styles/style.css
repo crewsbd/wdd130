@@ -218,6 +218,99 @@ footer .social img {
     width: 100%;
 }
 
+/*Begin rivers subpage styles */
+.river-group {
+    position: relative;
+    top: -150px;
+    background-color: #02809000;
+   
+}
+
+.river-text-right {
+    display: grid;
+    grid-template-columns: 80px 320px auto;
+    grid-template-rows: 50px auto auto;
+
+    margin: 0px;
+    padding: 30px;
+}
+.river-text-right .title {
+    color: #114b5f;
+    font-size: 1.5em;
+    text-align: right;
+    padding: 10px;
+    grid-column: 1/4;
+    grid-row: 1/1;
+    z-index: 1;
+    text-shadow: #ffffff 1px 1px;
+    font-family: "Racing Sans One",Arial, Helvetica, sans-serif;
+}
+.river-text-right .text {
+    background: linear-gradient(90deg, rgba(235,157,109,0.7) 0%, rgba(235,157,109,1) 35%, rgba(235,157,109,1) 100%);
+    text-shadow: #ffffff 1px 1px 0px;
+    color: #114b5f;
+    text-align: justify;
+    grid-column: 2/4;
+    grid-row: 2/3;
+    z-index: 1;
+    padding: 10px;
+    font-family: Tajawal, Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    
+}
+.river-text-right .image {
+    grid-column: 1/3;
+    grid-row: 1/4;
+    z-index: 0;
+    
+}
+.river-text-right .image img {
+    width: 400px;
+    box-shadow: #114b5f 5px 5px 10px;
+
+}
+.river-text-left {
+    display: grid;
+    grid-template-columns: auto 320px 80px;
+    grid-template-rows: 50px auto auto;
+
+    margin: 0px;
+    padding: 30px;
+}
+.river-text-left .title {
+    color: #114b5f;
+    font-size: 1.5em;
+    padding: 10px;
+    grid-column: 1/4;
+    grid-row: 1/1;
+    z-index: 1;
+    text-shadow: #ffffff 1px 1px;
+    font-family: "Racing Sans One",Arial, Helvetica, sans-serif;
+}
+.river-text-left .text {
+    background: linear-gradient(90deg, rgba(235,157,109,1) 0%, rgba(235,157,109,1) 35%, rgba(235,157,109,0.7) 100%);
+    text-shadow: #ffffff 1px 1px 0px;
+    color: #114b5f;
+    text-align: justify;
+    grid-column: 1/3;
+    grid-row: 2/3;
+    z-index: 1;
+    padding: 10px;
+    font-family: Tajawal, Arial, Helvetica, sans-serif;
+    font-size: .8em;
+}
+.river-text-left .image {
+    grid-column: 2/4;
+    grid-row: 1/4;
+    z-index: 0;
+    
+}
+.river-text-left .image img {
+    width: 400px;
+    box-shadow: #114b5f 5px 5px 10px;
+
+}
+/*End rivers subpage styles*/
 
 @media screen and (max-width: 900px) {
     #hero, .home-grid {
@@ -259,5 +352,34 @@ footer .social img {
     footer {
         margin-top: 25px;
     }
+/* Rivers subpage small screen styles */
+    .river-text-left {
+        display: block;
+        text-align: center;
+
+        margin: 0px;
+        padding: 30px;
+    }
+    .river-text-right {
+        display: block;
+        text-align: center;
+
+        margin: 0px;
+        padding: 30px;
+    }
+    .river-text-left .title {
+        text-align: center;
+    }
+    .river-text-right .title {
+        text-align: center;
+    }
+    .river-text-left .image {
+        position: relative;
+        top: -20px;
+    }
+    .river-group {
+        top: 0px;
+    }
+    /*End rivers subpage smallscreen styles*/
 }
           
