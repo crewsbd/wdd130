@@ -236,13 +236,15 @@ footer .social img {
 }
 .river-text-right .title {
     color: #114b5f;
+    background-color: #dddddd44;
     font-size: 1.5em;
     text-align: right;
     padding: 10px;
-    grid-column: 1/4;
+    grid-column: 2/4;
     grid-row: 1/1;
     z-index: 1;
     text-shadow: #ffffff 1px 1px;
+    border-radius: 15px 15px 0px 0px;
     font-family: "Racing Sans One",Arial, Helvetica, sans-serif;
 }
 .river-text-right .text {
@@ -279,12 +281,14 @@ footer .social img {
 }
 .river-text-left .title {
     color: #114b5f;
+    background-color: #dddddd44;
     font-size: 1.5em;
     padding: 10px;
-    grid-column: 1/4;
+    grid-column: 1/3;
     grid-row: 1/1;
     z-index: 1;
     text-shadow: #ffffff 1px 1px;
+    border-radius: 15px 15px 0px 0px;
     font-family: "Racing Sans One",Arial, Helvetica, sans-serif;
 }
 .river-text-left .text {
