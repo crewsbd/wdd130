@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Geostar+Fill&family=Keania+One&display=swap');
 @font-face {
     font-family: 'DSEG14 Classic Mini';
-    src: url('/fonts/DSEG14ClassicMini-Regular.ttf') format('truetype');
+    src: url('./../fonts/DSEG14ClassicMini-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
