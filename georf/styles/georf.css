@@ -13,6 +13,9 @@
     --main-background-color: #cccccc;
     --info-display-background-color: #e2e0d9;
     --background-standout: #ffffffcc;
+
+    --heading-font : "Black Ops One";
+    --paragraph-font: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* COMMENT */
@@ -61,10 +64,10 @@ nav input {
     background-color: #666677;
 }
 @keyframes button-glow {
-    from {  color: rgb(185, 90, 90);
-            text-shadow: #ce010000 0px 0px 1px;}
+    from {  color: #d6d6ea;
+            text-shadow: rgba(210, 205, 164, 0) 0px 0px 5px;}
     to {    color: rgb(229, 235, 149);
-            text-shadow: rgba(210, 205, 164, 200) 0px 0px 5px;}
+            text-shadow: rgba(210, 205, 164, 255) 0px 0px 5px;}
 }
 nav a {
     text-decoration: none;
@@ -141,10 +144,8 @@ tr:nth-child(even) {
     vertical-align: top;
 }
 @keyframes waterfall {
-    from {  background-position-x: 0;
-            background-size: 100%;}
-    to {    background-position-x: 160px;
-            background-size: 100%;}
+    from {  background-position-x: 0;}
+    to {    background-position-x: 160px;}
 }
  
 #freq-display {
@@ -154,6 +155,7 @@ tr:nth-child(even) {
     box-sizing: border-box;
     display: inline-block;
     margin-left: -2px;
+    position: static;
     /*border: 0px white solid;
     /*border-radius: 0px 10px 10px 0px; */
     vertical-align: top;
@@ -162,6 +164,7 @@ tr:nth-child(even) {
     animation-duration: 9s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
+    overflow-y: hidden;
 }
 #info-display {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -207,7 +210,8 @@ tr:nth-child(even) {
     grid-column: 1/2;
     z-index: 1;
     color: var(--accent1-color);
-    margin: 120px 20px 0px 20px;
+    margin: 12% 20px 0px 20px;
+    /* margin: 120px 20px 0px 20px; */
     background-color: var(--background-standout);
     width: fit-content;
     height: fit-content;
@@ -250,4 +254,33 @@ tr:nth-child(even) {
 }
 tr td:nth-child(1) {
     text-align: left;
+}
+
+.ex-vhfband {
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+    background-color: #ff000055;
+    width: 25px;
+    height: 250px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    text-align: center;
+    position:fixed;
+    top: 300px;
+    left: 365px;
+    padding-right: 5px;
+}
+.ex-2meterband {
+    font-family: var(--paragraph-font);
+    color: var(--accent2-color);
+    background-color: #00ff0055;
+    width: 25px;
+    height: 70px;
+    padding-right: 5px;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    text-align: center;
+    position:fixed;
+    top: 330px;
+    left: 335px;
 }
