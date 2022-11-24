@@ -140,9 +140,16 @@ tr:nth-child(even) {
     overflow-x: hidden;
     vertical-align: top;
 }
+@keyframes waterfall {
+    from {  background-position-x: 0;
+            background-size: 100%;}
+    to {    background-position-x: 160px;
+            background-size: 100%;}
+}
+
 #freq-display {
     background-color: #1f495c;
-    background-image: url("/georf/images/waterfall-side.png");
+    background-image: url("/../../georf/images/waterfall-side.png");
     background-size: 100%;
     box-sizing: border-box;
     display: inline-block;
@@ -151,6 +158,10 @@ tr:nth-child(even) {
     /*border-radius: 0px 10px 10px 0px; */
     vertical-align: top;
     overflow: hidden;
+    animation-name: waterfall;
+    animation-duration: 9s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 #info-display {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
