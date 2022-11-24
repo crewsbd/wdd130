@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Geostar+Fill&family=Keania+One&display=swap');
 @font-face {
     font-family: 'DSEG14 Classic Mini';
-    src: url('/../../georf/fonts/DSEG14ClassicMini-Regular.ttf') format('truetype');
+    src: url('/fonts/DSEG14ClassicMini-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -146,7 +146,7 @@ tr:nth-child(even) {
     to {    background-position-x: 160px;
             background-size: 100%;}
 }
-
+ 
 #freq-display {
     background-color: #1f495c;
     background-image: url("/../../georf/images/waterfall-side.png");
