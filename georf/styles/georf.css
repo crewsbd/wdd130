@@ -13,7 +13,8 @@
     --main-background-color: #cccccc;
     --info-display-background-color: #e2e0d9;
     --background-standout: #ffffffcc;
-
+    --border-width: 3px;
+    --border-color: rgb(172, 172, 172);
     --heading-font : "Black Ops One";
     --paragraph-font: Verdana, Geneva, Tahoma, sans-serif;
 }
@@ -57,17 +58,40 @@ nav {
     padding-bottom: 10px;
 }
 nav input {
-    height: 29px;
-    width: 25%;
+    height: 37px;
+    width: auto;
     position: relative;
-    top: -4px;
+
+    margin-bottom: 2px;
     background-color: #666677;
+    box-sizing: border-box;
 }
 @keyframes button-glow {
     from {  color: #d6d6ea;
             text-shadow: rgba(210, 205, 164, 0) 0px 0px 5px;}
     to {    color: rgb(229, 235, 149);
             text-shadow: rgba(210, 205, 164, 255) 0px 0px 5px;}
+}
+.burger {
+    display: inline;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: #333333;
+    background-image: linear-gradient(#3d3d3d, #aaaaaa);
+    color: #d6d6ea;
+    border: 2px rgb(123, 121, 121) solid;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px; 
+    border-radius: 7px;
+    display: none; /*Until needed */
+}
+.burger img {
+
+    width: 23px;
+    position: relative;
+    top: 3px;
 }
 nav a {
     text-decoration: none;
@@ -123,7 +147,9 @@ tr:nth-child(even) {
     max-height: 100%;
     padding: 0px;
     margin: 0px;
-    border: 4px #333333 solid;
+    border-style: solid;
+    border-width: var(--border-width);
+    border-color: var(--border-color);
     border-radius: 15px;
     box-sizing: border-box;
     overflow-y: hidden;
@@ -174,11 +200,9 @@ tr:nth-child(even) {
     padding: 0px;
     grid-template-rows: auto 70px 1fr;
     background-color: var(--info-display-background-color);
-    border: 4px #333333 solid;
-    border-radius: 15px;
-    box-sizing: border-box;
-    overflow-y:scroll;
+    overflow-y: scroll;
     overflow-x: hidden;
+    height: 100%;
     /* box-shadow: 10px 10px 5px #00000072 inset; */
     z-index: 1;
 }
@@ -188,7 +212,8 @@ tr:nth-child(even) {
     text-shadow: white 1px 1px 3px, white -1px -1px 3px;
     /* background-color: #e2e0d944; */
     margin: 0px 0px 0px 0px;
-    padding: 0px 40px 100px 40px;
+    padding: 0px 40px 40px 40px;
+    height: fit-content;
 }
 .info-display-gradient {
     background-image: linear-gradient(#e2e0d900, #e2e0d900, var(--info-display-background-color));
@@ -231,6 +256,7 @@ tr:nth-child(even) {
     border: solid var(--secondary-color) 0px;
     overflow: hidden;
     background-color:rgb(255, 255, 255);
+    box-shadow:#00000012 12px 12px 4px;
 }
 
 .float-left-25 {
@@ -255,6 +281,16 @@ tr:nth-child(even) {
 tr td:nth-child(1) {
     text-align: left;
 }
+.scroll-rounded-corners { /*Fixes scroll bar over rounded corner. */
+    border-style: solid;
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow:hidden;
+   
+}
+
 
 .ex-vhfband {
     font-family: var(--paragraph-font);
@@ -288,6 +324,23 @@ tr td:nth-child(1) {
     main {
 
         grid-template-columns: auto;
-        grid-template-rows: 300px auto;
+        grid-template-rows: 200px auto;
+    }
+    .burger {
+        display: inline;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        margin-bottom: 2px;
+    }
+    nav input {
+        width: 100%;
+        
+    }
+    .content {
+        display: grid;
+        grid-template-rows: 360px minmax(300px, 100%) 50px;
+        height: 100%;
     }
 }
