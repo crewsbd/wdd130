@@ -85,6 +85,7 @@ nav input {
     padding-top: 5px;
     padding-bottom: 5px; 
     border-radius: 7px;
+    margin-bottom: 2px;
     display: none; /*Until needed */
 }
 .burger img {
@@ -327,7 +328,8 @@ tr td:nth-child(1) {
         grid-template-rows: 200px auto;
     }
     .burger {
-        display: inline;
+        /*display: block; */
+        
     }
     nav a {
         display: block;
