@@ -70,7 +70,7 @@ nav input {
     from {  color: #d6d6ea;
             text-shadow: rgba(210, 205, 164, 0) 0px 0px 5px;}
     to {    color: rgb(229, 235, 149);
-            text-shadow: rgba(210, 205, 164, 255) 0px 0px 5px;}
+            text-shadow: rgba(210, 205, 164, 1) 0px 0px 5px;}
 }
 .burger {
     display: inline;
@@ -131,7 +131,7 @@ tr:nth-child(even) {
     color: black;
     font-size: 3em;
     font-family: "Black Ops One";
-    font-weight: regular;
+    font-weight: normal;
     text-shadow: #ffffff 0px 0px 5px;
     line-height: 0px;
     position: relative;
@@ -275,6 +275,7 @@ tr:nth-child(even) {
     padding: 5px;
     color: var(--secondary-color);
     font-size: .7em;
+    display: inline-block;
 }
 #freq-list table {
     text-align: right;
