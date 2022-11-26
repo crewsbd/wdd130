@@ -322,27 +322,28 @@ tr td:nth-child(1) {
     left: 335px;
 }
 @media screen and (max-width: 900px) {
+    .content {
+        display: grid;
+        grid-template-rows: 290px minmax(300px, 100%) 50px;
+        height: 100%;
+    }
     main {
 
         grid-template-columns: auto;
-        grid-template-rows: 200px auto;
+        grid-template-rows: 140px auto;
     }
     .burger {
         /*display: block; */
-        
+        display: none
     }
     nav a {
         display: block;
         text-align: center;
         margin-bottom: 2px;
+        font-size: .3em;
     }
     nav input {
         width: 100%;
         
-    }
-    .content {
-        display: grid;
-        grid-template-rows: 360px minmax(300px, 100%) 50px;
-        height: 100%;
     }
 }
