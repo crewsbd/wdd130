@@ -190,6 +190,15 @@ tr:nth-child(even) {
     animation-timing-function: linear;
     overflow-y: hidden;
 }
+.scroll-rounded-corners { /*Fixes scroll bar over rounded corner. */
+    border-style: solid;
+    border-width: var(--border-width);
+    border-color: var(--border-color);
+    border-radius: 15px;
+    box-sizing: border-box;
+    overflow: hidden;
+   
+}
 #info-display {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: justify;
@@ -202,6 +211,12 @@ tr:nth-child(even) {
     overflow-x: hidden;
     height: 100%;
     /* box-shadow: 10px 10px 5px #00000072 inset; */
+    z-index: 1;
+}
+#map_display {
+    overflow: scroll;
+    height: 100px;
+    width: 100%;
     z-index: 1;
 }
 .info-display-text {
@@ -279,15 +294,7 @@ tr:nth-child(even) {
 tr td:nth-child(1) {
     text-align: left;
 }
-.scroll-rounded-corners { /*Fixes scroll bar over rounded corner. */
-    border-style: solid;
-    border-width: var(--border-width);
-    border-color: var(--border-color);
-    border-radius: 15px;
-    box-sizing: border-box;
-    overflow:hidden;
-   
-}
+
 
 
 .ex-vhfband {
@@ -377,9 +384,6 @@ tr td:nth-child(1) {
     .float-left-25, .float-right-25 {
         width: 50%;
     }
-
-
-
 
     nav {
         display:block;
