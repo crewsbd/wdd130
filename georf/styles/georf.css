@@ -18,7 +18,6 @@
     --heading-font : "Black Ops One";
     --paragraph-font: Verdana, Geneva, Tahoma, sans-serif;
 }
-
 /* COMMENT */
 html {
     height: 100vh;
@@ -213,11 +212,28 @@ tr:nth-child(even) {
     /* box-shadow: 10px 10px 5px #00000072 inset; */
     z-index: 1;
 }
-#map_display {
+#map-display {
     overflow: scroll;
-    height: 100px;
+    height: 100%;
     width: 100%;
     z-index: 1;
+}
+#map-display .zoom-controls {
+    background-color: var(--main-background-color);
+    font-weight: bolder;
+    font-size: 200%;
+    width: 40px;
+    height: 80px;
+    position: fixed;
+    top: 170px;
+    right: 30px;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: rgb(0,0,0,.2) 10px 10px 3px;
+}
+#map-display .zoom-controls div {
+    width: 100%;
+    text-align: center;
 }
 .info-display-text {
     grid-row: 2/4;
@@ -343,7 +359,15 @@ tr td:nth-child(1) {
     .info-display-text {
         font-size: 70%;
     }
-
+    #map-display .zoom-controls {
+        width: 40px;
+        height: 80px;
+        position: fixed;
+        top: 310px;
+        right: 30px;
+        border: var(--border-width) solid var(--border-color);
+        border-radius: 5px;
+    }
     .burger-content {
         display: none;
         position: relative;
